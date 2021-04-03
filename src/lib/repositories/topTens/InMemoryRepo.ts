@@ -1,7 +1,13 @@
-import type {TopTensRepo} from './Repo'
+import type {TopTen, TopTensRepo} from './Repo'
 
 export class InMemoryRepo implements TopTensRepo {
-  latest = async () => []
+  #topTens: TopTen[]
+
+  constructor(topTens: TopTen[]) {
+    this.#topTens = topTens
+  }
+
+  latest = async () => this.#topTens
 }
 
-export const topTensRepo = new InMemoryRepo()
+export const topTensRepo = new InMemoryRepo([])

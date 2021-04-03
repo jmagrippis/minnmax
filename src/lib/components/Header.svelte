@@ -3,9 +3,7 @@
   import Link from './Link.svelte'
 </script>
 
-<nav
-  class="container py-4 px-2 md:px-0 flex items-center text-lg text-minnmax-prime"
->
+<nav class="container py-4 px-2 flex items-center text-lg text-minnmax-prime">
   <a href="/" class="text-2xl font-normal mr-4 md:mr-8">MinnMax</a>
   <ul class="space-x-4 md:space-x-8 flex items-center flex-grow mr-4">
     <li>

@@ -1,8 +1,9 @@
 <script context="module" lang="ts">
   import type {Load} from '@sveltejs/kit'
 
+  const url = '/top-tens.json'
+
   export const load: Load = async ({fetch}) => {
-    const url = '/top-tens.json'
     const res = await fetch(url)
 
     if (res.ok) {
@@ -22,12 +23,13 @@
 
 <script lang="ts">
   import PageHeading from '$lib/components/PageHeading.svelte'
+  import TopTensList from '$lib/components/TopTens/TopTensList.svelte'
+  import type {TopTen} from '$lib/repositories/topTens/Repo'
 
-  export let topTens: unknown[]
+  export let topTens: TopTen[]
 </script>
 
-<section class="container flex-grow">
+<section class="container px-2 flex-grow">
   <PageHeading>Top Tens</PageHeading>
-  <p>This is where we’ll be listing our Top Tens!</p>
-  <pre>{JSON.stringify(topTens)}</pre>
+  <TopTensList {topTens} />
 </section>

@@ -3,7 +3,7 @@
   import Link from '$lib/components/Link.svelte'
 </script>
 
-<section class="container flex-grow text-xl">
+<section class="container px-2 flex-grow text-xl">
   <PageHeading>About</PageHeading>
 
   <div class="space-y-2">

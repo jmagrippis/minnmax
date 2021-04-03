@@ -3,14 +3,14 @@
 </script>
 
 <section
-  class="container py-4 px-2 md:px-0 md:grid md:grid-cols-7 md:gap-x-8 lg:gap-x-16"
+  class="container py-4 px-2 md:grid md:grid-cols-7 md:gap-x-8 lg:gap-x-16"
 >
   <div
     class="mb-8 md:mb-0 text-xl md:text-2xl md:col-span-3 text-center md:text-left md:self-center"
   >
-    <div class="text-5xl lg:text-6xl mb-2 text-minnmax-prime font-normal">
+    <h1 class="text-5xl lg:text-6xl mb-2 text-minnmax-prime font-normal">
       MinnMax
-    </div>
+    </h1>
     <p class="text-gray-400 mb-6">
       A patreon about games, friends and getting better!
     </p>
