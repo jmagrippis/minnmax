@@ -7,7 +7,6 @@
     "start": "svelte-kit start"
   },
   "dependencies": {
-    "airtable": "^0.10.1",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
